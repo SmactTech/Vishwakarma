@@ -1,0 +1,17 @@
+#include <LiquidCrystal.h>
+
+// Initialize the library by creating an instance of the LiquidCrystal class
+// You can use different pins if your LCD is connected differently
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+void setup() {
+  // Set up the number of columns and rows in the LCD
+  lcd.begin(16, 2);  // Change these values to match your LCD
+
+  // Print a message to the LCD.
+  lcd.print("Hello, Arduino!");
+}
+
+void loop() {
+  // Nothing to do here
+}
